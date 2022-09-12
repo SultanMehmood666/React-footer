@@ -1,0 +1,113 @@
+Format .jsx
+
+
+import axios from 'axios';
+import Express from 'express';
+import ReactDOM from 'react-dom';
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+
+export default function Footer () {
+ 
+return (
+<>
+<br />
+<footer>
+  <div className="row"  style={{backgroundColor: '#29015d', color: 'white'}}>
+    <div className="col-lg-6" >
+      <h2 style={{marginTop: '5%', marginLeft: '3%', color: 'white', fontSize: '3vw',}}>Talk To Us</h2>
+      <p style={{textAlign: 'justify', marginLeft: '3%', color: 'white', fontSize: '1.2vw',}}>4EI are an industry leader in the Earth Intelligence sector. we are a Customer-first company who work with agility and an innovative mindset. we are commited to providing solution that truly add value and directly impact your projects.<br /><br />Get in touch to start a conversation about how our applied intelligence services can transform the way you use data.
+</p>
+
+<br /><br /><br />
+<span style={{marginLeft: '3%', color: 'white', fontSize: '1.2vw',}}>Follow Us </span><i className="fab fa-twitter" style={{color: '#24d9e3', marginLeft: '25px'}}></i><i className="fab fa-instagram" style={{color: '#24d9e3', marginLeft: '15px'}}></i><i className="fab fa-linkedin-in" style={{color: '#24d9e3',marginLeft: '15px'}}></i>
+
+
+
+</div>
+
+
+
+<div className="row col-lg-6 col-12" style={{marginTop: '5%', width: 'fixed',}}>
+ <form action="#" method='POST'>
+<div className="d-flex col">
+
+ <div className="row" style={{marginLeft: '2px'}}>
+    <div className="form-group col">
+<label for="Fname" style={{color: 'white', fontSize: '1.2vw',}}>First Name<span style={{color: '#b60026'}}>*</span></label>    
+<input style={{width: '17vw', height: '3.1vw', resize: 'none'}} type="Text" autoComplete='off' required name="fname" value={""} onChange={""}/>
+</div>
+</div>
+
+
+<div className="row" style={{marginLeft: '2px'}}>
+<div className="form-group col">
+<label for="Lname" style={{color: 'white', fontSize: '1.2vw',}}>Last Name<span style={{color: '#b60026'}}>*</span></label>    
+<input style={{width: '20vw', height: '3.1vw', resize: 'none'}} type="Text" name="lname" autoComplete='off' required value={""} onChange={""} />
+</div></div>
+</div>
+
+
+<div className="row" style={{marginLeft: '2px'}}>
+<div className="row col">
+<div className="d-flex">
+  <div className="form-group col" style={{marginLeft: "15px",}}>
+<label for="Lname" style={{color: 'white',fontSize: '1.2vw',}}>Email<span style={{color: "#b60026",}}>*</span></label>    
+<input style={{width: '41.1vw', height: '3.5vw',}} type="Email" name="email" autoComplete='off' value={""} onChange={""} required/>
+</div></div>
+</div>
+</div>
+
+<div className="row col">
+<div className="d-flex">
+  <div className="form-group col" style={{marginLeft: '15px'}}>
+<label for="Message" style={{color: 'white', fontSize: '1.2vw',}}>Message<span style={{color: '#b60026',}}>*</span></label>    
+<textarea style={{width: '41.1vw', height: '10vw', resize: 'none'}} type="Email" required autoComplete='off' name="message" value={""} onChange={""}></textarea>
+</div>
+</div>
+</div>
+<div className="d-flex row col-12" style={{marginLeft: '15px'}}>
+<button type="submit" style={{borderStyle: 'solid', fontSize: '1.2vw'}} className="btn btn-primary">Submit</button>
+</div>
+<br /><br />
+  </form>
+
+</div>
+</div>
+</footer>
+
+
+
+
+<div className="col-12 bg-white">
+<div className="row d-flex ">
+  <div className="col  order-1 mt-2">
+    <center>
+    <a href="#" style={{fontSize: '1.2vw'}}>Home</a><br />
+    <a href="#" style={{fontSize: '1.2vw'}}>What We Do</a><br />
+    <a href="#" style={{fontSize: '1.2vw'}}>About us</a>
+</center>
+  </div>
+
+
+<div className="col order-2" style={{marginTop: '25px',  fontSize: '1.2vw'}}>
+  <center><a href="#">Contact Us</a></center>
+
+</div>
+
+
+
+<div className="col-5  order-3" ><div>
+  <i className="fab fa-twitter" style={{marginLeft: '70%',}}></i>
+  <i className="fab fa-instagram" style={{marginLeft: '2%',}}></i>
+  <i className="fab fa-linkedin-in" style={{marginLeft: '2%',}}></i></div>
+  <div><p style={{textAlign:'right',fontSize: '1.2vw'}}>  FAAB AI is a registered trademark. Company Number 0123456789 <br /> 2022 FAAB AI</p></div>
+</div>
+</div>
+
+
+</div>
+
+</>
+)
+}
